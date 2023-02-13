@@ -4,9 +4,11 @@ import { LibraryCardV2ViewComponent } from './cards/librarycard-v2/librarycard-v
 import { LibraryCardViewComponent } from './cards/librarycard/librarycard.component';
 import { GroupsViewComponent } from './cards/groups/groups.component';
 import { LibraryCardV3ViewComponent } from './cards/librarycard-v3/librarycard-v3.component';
+import { LibraryCardV4ViewComponent } from './cards/librarycard-v4/librarycard-v4.component';
 
 @NgModule({
   declarations: [
+    LibraryCardV4ViewComponent,
     LibraryCardV3ViewComponent,
     LibraryCardV2ViewComponent,
     LibraryCardViewComponent,
@@ -14,6 +16,7 @@ import { LibraryCardV3ViewComponent } from './cards/librarycard-v3/librarycard-v
   ],
   imports: [
     RouterModule.forRoot([
+      { path: 'librarycard-v4', component: LibraryCardV4ViewComponent },
       { path: 'librarycard-v3', component: LibraryCardV3ViewComponent },
       { path: 'librarycard-v2', component: LibraryCardV2ViewComponent },
       { path: 'librarycard', component: LibraryCardViewComponent },
